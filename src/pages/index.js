@@ -69,7 +69,7 @@ const Index = () => {
 
         {/* weather app body start */}
         <div className="row  d-flex align-items-center justify-content-center" style={{ height: '100vh' }}>
-          <div className="col-lg-4 col-md-9 col-sm-10 col-10">
+          <div className="col-lg-4 col-md-9 col-sm-11 col-11">
 
             <section className='weather-body'>
 
