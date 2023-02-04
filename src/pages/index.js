@@ -5,7 +5,7 @@ import { FaSearchLocation } from "react-icons/fa";
 import { IoPartlySunnyOutline } from "react-icons/io5";
 
 
-const index = () => {
+const Index = () => {
   const [location, setLocation] = useState({});
 
   const [data, setData] = useState(); 
@@ -138,4 +138,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
