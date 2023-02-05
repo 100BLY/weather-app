@@ -14,7 +14,8 @@ const Index = () => {
 
   const [theme, setTheme] = useState('');
 
-
+  const [cityPre, setCityPre] = useState(null);
+  const [city, setCity] = useState(null);
   useEffect(() => {
     // function to get user current location & show the current time
     const getUserTime = () => {
@@ -35,10 +36,9 @@ const Index = () => {
     };
 
     getUserTime();
-  }, []);
+  }, [city]);
 
-  const [cityPre, setCityPre] = useState(null);
-  const [city, setCity] = useState(null);
+
 
   const getCityName = (c) => {
     console.log(c, "c")
