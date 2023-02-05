@@ -90,6 +90,7 @@ const Index = () => {
   };
   axios.request(options).then(function (response) {
     // console.log(response.data);
+    setData(null);
     setData(response && response.data)
   }).catch(function (error) {
     // console.error(error);
