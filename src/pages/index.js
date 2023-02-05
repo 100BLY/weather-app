@@ -47,12 +47,15 @@ const Index = () => {
 
   function getDataAsPerCITY() {
     setCity(cityPre);
+    setCityPre("");
   }
 
 
   // function to check current address 
   function checkMyWeather() {
     setCity(setLocation.city);
+    setCityPre("");
+
 
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
@@ -125,7 +128,7 @@ const Index = () => {
 
               {/* inputs for searching location */}
               <div className="search-country d-flex align-items-center justify-content-between">
-                <input onChange={(x => getCityName(x.target.value))} type="text" placeholder='Another location ?' />
+                <input value={cityPre} onChange={(x => getCityName(x.target.value))} type="text" placeholder='Another location ?' />
                 <div onClick={getDataAsPerCITY} className="submit-icon">
                   <FaSearchLocation />
                 </div>
